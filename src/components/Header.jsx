@@ -11,7 +11,7 @@ import {
   Truck,
   Users,
   GraduationCap,
-  HandHeart,
+  HeartHandshake, // ✅ Changed from HandHeart to HeartHandshake
   Eye,
   ShoppingCart,
   Settings,
@@ -58,7 +58,7 @@ const Header = () => {
     },
     { 
       name: 'Collaborative Hub', 
-      icon: HandHeart, 
+      icon: HeartHandshake, // ✅ Updated to use HeartHandshake
       href: '/services/collaboration',
       description: 'Connect with complementary artisans'
     },

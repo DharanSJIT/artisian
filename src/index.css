@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   html {
@@ -69,7 +69,6 @@
     @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800;
   }
 
-  /* Form styles */
   .form-group {
     @apply mb-4;
   }
@@ -86,7 +85,6 @@
     @apply text-gray-500 text-sm mt-1;
   }
 
-  /* Table styles */
   .table-responsive {
     @apply overflow-x-auto;
   }
@@ -107,7 +105,6 @@
     @apply bg-gray-50;
   }
 
-  /* Status indicators */
   .status-dot {
     @apply w-2 h-2 rounded-full inline-block mr-2;
   }
@@ -124,7 +121,6 @@
     @apply w-2 h-2 rounded-full inline-block mr-2 bg-yellow-500;
   }
 
-  /* Progress bar */
   .progress {
     @apply w-full bg-gray-200 rounded-full h-2;
   }
@@ -139,7 +135,6 @@
     text-wrap: balance;
   }
 
-  /* Line clamp utilities */
   .line-clamp-1 {
     overflow: hidden;
     display: -webkit-box;
@@ -213,7 +208,6 @@
   }
 }
 
-/* Custom animations */
 @keyframes float {
   0%, 100% { 
     transform: translateY(0px); 
@@ -261,7 +255,6 @@
   100% { transform: rotate(360deg); }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -282,19 +275,16 @@
   background: #94a3b8;
 }
 
-/* Selection styles */
 ::selection {
   background-color: #fed7aa;
   color: #9a3412;
 }
 
-/* Focus styles */
 .focus-visible {
   outline: 2px solid #f97316;
   outline-offset: 2px;
 }
 
-/* Loading spinner */
 .loading-spinner {
   border: 2px solid #f3f4f6;
   border-top: 2px solid #f97316;
@@ -304,7 +294,6 @@
   animation: spin 1s linear infinite;
 }
 
-/* Responsive utilities */
 @media (max-width: 640px) {
   .text-responsive-xl {
     font-size: 2.5rem;
@@ -322,7 +311,6 @@
   }
 }
 
-/* Print styles */
 @media print {
   .no-print {
     display: none !important;
@@ -339,7 +327,6 @@
   }
 }
 
-/* High contrast mode */
 @media (prefers-contrast: high) {
   .text-gray-600 {
     color: #000 !important;
@@ -354,7 +341,6 @@
   }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -363,7 +349,6 @@
   }
 }
 
-/* Tooltip styles */
 .tooltip {
   position: relative;
 }
@@ -390,7 +375,6 @@
   opacity: 1;
 }
 
-/* Additional utility classes */
 .backdrop-blur-sm {
   backdrop-filter: blur(4px);
 }
@@ -407,7 +391,6 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Dark mode variables (for future use) */
 :root {
   --color-background: #ffffff;
   --color-foreground: #0f172a;
